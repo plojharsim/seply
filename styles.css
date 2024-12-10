@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.pozadi {
+    height: 100vh;
+    background: url('pozadi.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pozadi .prekryti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pozadi h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pozadi p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Tlačítko */
+.tlacitko1 {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+section {
+    padding: 20px;
+    background: #333;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1rem;
+    color: #ccc;
+}

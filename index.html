@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Úvodní stránka</title>
+    <title>Seply.cz - Servis plynových zařízení</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="pozadi">
-        <div class="prekryti">
+
+    <!-- Navigační menu -->
+    <header>
+        <nav>
+            <!-- Název webu jako odkaz na domovskou stránku -->
+            <a href="index.html" class="logo">Seply.cz</a>
+            <ul>
+                <li><a href="cenik.html">Ceník</a></li>
+                <li><a href="o-firme.html">O firmě</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <a href="#" class="order-button">Objednávka</a>
+        </nav>
+    </header>
+
+    <!-- Úvodní sekce s pozadím -->
+    <div class="hero">
+        <div class="overlay">
             <header>
-                <h1>Vítejte na mé webové stránce!</h1>
-                <p>Objevte něco nového</p>
-                <a href="#about" class="tlacitko1">Více informací</a>
+                <h1>Seply.cz</h1>
+                <p>Servis a montáž vyhrazených plynových zařízení</p>
+                <a href="objednavka.html" class="btn">Objednávka služeb</a>
             </header>
         </div>
     </div>
-
-    <section id="o-mne">
-        <h2>O mně</h2>
-        <p>Tato stránka je vytvořena jako ukázka jednoduchého webu s pěkným pozadím.</p>
-    </section>
 </body>
+<section class="why-choose">
+    <div class="container">
+        <h2>Proč si vybrat právě Seply.cz?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Spolehlivá služba</h3>
+                <p>Jsem vyškolen a připraven na všechny problémy, což zajišťuje, že vaše zařízení bude co nejdříve opět funkční.</p>
+            </div>
+            <div class="reason">
+                <h3>Kvalita a cena</h3>
+                <p>Náš materiál je kvalitní a ceny jsou velmi příznivé, což zajišťuje, že vám kotel dlouho vydrží bez závad.</p>
+            </div>
+            <div class="reason">
+                <h3>Profesionalita a zkušenosti</h3>
+                <p>Jsem vyškolen na kotle vysoké škály výrobců a mám dlouholeté zkušenosti s jejich instalací, údržbou a opravami.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="brands">
+    <div class="container">
+        <h2>Na jaké značky se specializuji</h2>
+        <div class="brand-list">
+            <div class="brand">
+                <img src="logos/brand1-logo.png" alt="Značka 1">
+                <p>Protherm</p>
+            </div>
+            <div class="brand">
+                <img src="logos/brand2-logo.png" alt="Značka 2">
+                <p>Vaillant</p>
+            </div>
+            <div class="brand">
+                <img src="logos/brand3-logo.png" alt="Značka 3">
+                <p>Immergas</p>
+            </div>
+            <div class="brand">
+                <img src="logos/brand4-logo.png" alt="Značka 4">
+                <p>Enbra</p>
+            </div>
+            <div class="brand">
+                <img src="logos/brand5-logo.png" alt="Značka 5">
+                <p>Baxi</p>
+            </div>
+            <div class="brand">
+                <img src="logos/brand6-logo.png" alt="Značka 6">
+                <p>Wolf</p>
+            </div>
+        </div>
+    </div>
+</section>
 </html>

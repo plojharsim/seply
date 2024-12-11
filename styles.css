@@ -1,3 +1,4 @@
+/* Základní styl pro tělo stránky */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,41 +6,108 @@ body {
     line-height: 1.6;
 }
 
-.pozadi {
-    height: 100vh;
-    background: url('pozadi.jpg') no-repeat center center/cover;
+/* Navigační menu */
+header nav {
+    background-color: #333;
+    padding: 10px;
     display: flex;
+    justify-content: space-between; /* Prostor mezi logem a tlačítky */
     align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
-.pozadi .prekryti {
+/* Logo */
+header nav .logo {
+    color: #fff;
+    font-size: 2.5rem; /* Zvýšení velikosti písma pro název firmy */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+/* Hlavní menu */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Odsazení menu do středu */
+    flex-grow: 1; /* Aby menu zůstalo uprostřed */
+    margin-right: 200px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Tlačítka v menu */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Speciální tlačítko Objednávka */
+header nav .order-button {
+    position: absolute;
+    right: 20px; /* Odsazení od levé strany */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+header nav .order-button:hover {
+    background: #0056b3;
+}
+
+/* Úvodní sekce (pozadí) */
+.hero {
+    height: 70vh;
+    background: url('pozadi.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: flex-start; /* Zarovnání obsahu k horní části */
+    justify-content: center;
+    position: relative;
+    padding-top: 10%; /* Přidání prostoru z vrchu */
+}
+
+.hero .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    bottom: 0; /* Přitáhne ji k dolní části rodiče */
+    background: rgba(0, 0, 0, 0.5); /* Tmavý překrytí */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+    padding-top: 8%; /* Udržuje prostor pro text */
 }
 
-.pozadi h1 {
+.hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.pozadi p {
+.hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-/* Tlačítko */
-.tlacitko1 {
+.btn {
     background: #007bff;
     color: white;
     padding: 10px 20px;
@@ -49,18 +117,109 @@ body {
     transition: background 0.3s ease;
 }
 
-section {
-    padding: 20px;
-    background: #333;
+/* Sekce "Proč si vybrat" */
+.why-choose {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.why-choose h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-section p {
-    font-size: 1rem;
-    color: #ccc;
+.why-choose .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.reason {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.reason h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.reason p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #d4d4d4;
+}
+
+/* Sekce pro značky */
+.brands {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.brands h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brands .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.brand p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #f4a261;
+}
+
+.brand:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }

@@ -1,9 +1,9 @@
 :root {
-    --primary-title-color: #ffffff;
-    --primary-text-color: #d4d4d4;
-    --background-color: #333;
-    --not-important-button-color: #444444;
-    --button-color: #007bff;
+    --white-color: #ffffff;
+    --light-gray-color: #d4d4d4;
+    --bg-dark-color: #333;
+    --gray-color: #444444;
+    --blue-color: #007bff;
 }
 
 html {
@@ -13,13 +13,13 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: var(--primary-title-color);
+    color: var(--white-color);
     line-height: 1.6;
-    background-color: var(--background-color);
+    background-color: var(--bg-dark-color);
 }
 
 header nav {
-    background-color: var(--background-color);
+    background-color: var(--bg-dark-color);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ header nav {
 }
 
 header nav .logo {
-    color: var(--primary-title-color);
+    color: var(--white-color);
     font-size: 2.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -50,7 +50,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--primary-title-color);
+    color: var(--white-color);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 8px 16px;
@@ -58,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: var(--button-color);
+    background-color: var(--blue-color);
     border-radius: 5px;
 }
 
@@ -66,8 +66,8 @@ header nav .order-button {
     position: absolute;
     right: 20px;
     padding: 10px 20px;
-    background-color: var(--button-color);
-    color: var(--primary-title-color);
+    background-color: var(--blue-color);
+    color: var(--white-color);
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background 0.3s ease;
@@ -75,7 +75,7 @@ header nav .order-button {
 }
 
 header nav .order-button:hover {
-    background: var(--button-color);
+    background: var(--blue-color);
 }
 
 .hero {
@@ -114,8 +114,8 @@ header nav .order-button:hover {
 }
 
 .btn {
-    background: var(--button-color);
-    color: var(--primary-title-color);
+    background: var(--blue-color);
+    color: var(--white-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -124,8 +124,8 @@ header nav .order-button:hover {
 }
 
 .why-choose {
-    background-color: var(--background-color);
-    color: var(--primary-title-color);
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -151,7 +151,7 @@ header nav .order-button:hover {
 }
 
 .reason {
-    background-color: var(--not-important-button-color);
+    background-color: var(--gray-color);
     padding: 30px;
     border-radius: 8px;
     width: 30%;
@@ -167,18 +167,18 @@ header nav .order-button:hover {
 .reason h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--primary-title-color);
+    color: var(--white-color);
 }
 
 .reason p {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: var(--light-gray-color);
 }
 
 .brands {
-    background-color: var(--background-color);
-    color: var(--primary-title-color);
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -204,7 +204,7 @@ header nav .order-button:hover {
 }
 
 .brand {
-    background-color: var(--not-important-button-color);
+    background-color: var(--gray-color);
     padding: 20px;
     border-radius: 8px;
     width: 30%;
@@ -228,8 +228,8 @@ header nav .order-button:hover {
 }
 
 .pricing {
-    background-color: var(--background-color);
-    color: var(--primary-title-color);
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -298,7 +298,7 @@ header nav .order-button:hover {
 }
 
 .faq {
-    background-color: var(--background-color);
+    background-color: var(--bg-dark-color);
     color: #fff;
     padding: 50px 0;
 }
@@ -312,14 +312,14 @@ header nav .order-button:hover {
 .faq h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--primary-title-color);
+    color: var(--white-color);
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .faq-item {
-    background-color: var(--not-important-button-color);
+    background-color: var(--gray-color);
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
@@ -329,13 +329,13 @@ header nav .order-button:hover {
 .faq-item h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--primary-title-color);
+    color: var(--white-color);
 }
 
 .faq-item p {
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: var(--light-gray-color);
 }
 
 .faq-item:hover {
@@ -370,8 +370,8 @@ header nav .order-button:hover {
 }
 
 .company {
-    background-color: var(--background-color);
-    color: var(--primary-title-color);
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -390,7 +390,7 @@ header nav .order-button:hover {
 }
 
 .info-box {
-    background-color: var(--not-important-button-color);
+    background-color: var(--gray-color);
     margin-bottom: 30px;
     padding: 30px;
     border-radius: 8px;
@@ -406,14 +406,14 @@ header nav .order-button:hover {
 .info-box h3 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: var(--primary-title-color);
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
 .info-box p {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: var(--light-gray-color);
 }
 
 .info-box ul {
@@ -424,7 +424,7 @@ header nav .order-button:hover {
 
 .info-box ul li {
     font-size: 1.1rem;
-    color: var(--primary-title-color);
+    color: var(--white-color);
     margin: 8px 0;
 }
 
@@ -442,8 +442,8 @@ header nav .order-button:hover {
 }
 
 .company-info {
-    background-color: var(--background-color);
-    color: var(--primary-title-color);
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -462,7 +462,7 @@ header nav .order-button:hover {
 }
 
 .info-box {
-    background-color: var(--not-important-button-color);
+    background-color: var(--gray-color);
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
@@ -478,17 +478,17 @@ header nav .order-button:hover {
 .info-box h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--primary-title-color);
+    color: var(--white-color);
 }
 
 .info-box p {
     font-size: 1.2rem;
     line-height: 1.5;
-    color: var(--primary-text-color);
+    color: var(--light-gray-color);
 }
 
 .info-box a {
-    color: var(--button-color);
+    color: var(--blue-color);
     text-decoration: none;
     font-weight: bold;
 }

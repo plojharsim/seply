@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Základní styl pro tělo stránky */
 body {
     margin: 0;
@@ -296,6 +300,17 @@ header nav .order-button:hover {
     font-weight: bold;
 }
 
+/* Úprava šířek sloupců v tabulkách ceníku */
+.price-table th.column-1,
+.price-table td.column-1 {
+    width: 15%;  /* 1 část z 3 pro první sloupec */
+}
+
+.price-table th.column-2,
+.price-table td.column-2 {
+    width: 1%
+}
+
 /* FAQ Sekce */
 .faq {
     background-color: #333;
@@ -342,3 +357,32 @@ header nav .order-button:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* Styl pro šipku dolů */
+.scroll-down {
+    position: absolute;
+    bottom: 30px; /* Umístí šipku 30px nad spodní částí sekce */
+    left: 50%;
+    transform: translateX(-50%); /* Centrování šipky horizontálně */
+    cursor: pointer;
+    animation: bounce 1.5s infinite; /* Animace pro pohyb šipky nahoru a dolů */
+}
+
+.scroll-down img {
+    width: 40px; /* Velikost šipky */
+    height: auto;
+}
+
+/* Animace pro šipku (pohyb nahoru a dolů) */
+@keyframes bounce {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+    50% {
+        transform: translateY(10px) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+}
+

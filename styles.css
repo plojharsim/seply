@@ -1,41 +1,46 @@
+:root {
+    --primary-title-color: #ffffff;
+    --primary-text-color: #d4d4d4;
+    --background-color: #333;
+    --not-important-button-color: #444444;
+    --button-color: #007bff;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Základní styl pro tělo stránky */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
+    color: var(--primary-title-color);
     line-height: 1.6;
+    background-color: var(--background-color);
 }
 
-/* Navigační menu */
 header nav {
-    background-color: #333;
+    background-color: var(--background-color);
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Prostor mezi logem a tlačítky */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Logo */
 header nav .logo {
-    color: #fff;
-    font-size: 2.5rem; /* Zvýšení velikosti písma pro název firmy */
+    color: var(--primary-title-color);
+    font-size: 2.5rem;
     text-decoration: none;
     font-weight: bold;
     margin-left: 100px;
 }
 
-/* Hlavní menu */
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Odsazení menu do středu */
-    flex-grow: 1; /* Aby menu zůstalo uprostřed */
+    justify-content: center;
+    flex-grow: 1;
     margin-right: 200px;
 }
 
@@ -44,9 +49,8 @@ header nav ul li {
     margin-right: 10px;
 }
 
-/* Tlačítka v menu */
 header nav ul li a {
-    color: #fff;
+    color: var(--primary-title-color);
     text-decoration: none;
     font-size: 1.2rem;
     padding: 8px 16px;
@@ -54,17 +58,16 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #007bff;
+    background-color: var(--button-color);
     border-radius: 5px;
 }
 
-/* Speciální tlačítko Objednávka */
 header nav .order-button {
     position: absolute;
-    right: 20px; /* Odsazení od levé strany */
+    right: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--button-color);
+    color: var(--primary-title-color);
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background 0.3s ease;
@@ -72,18 +75,17 @@ header nav .order-button {
 }
 
 header nav .order-button:hover {
-    background: #0056b3;
+    background: var(--button-color);
 }
 
-/* Úvodní sekce (pozadí) */
 .hero {
     height: 70vh;
     background: url('pozadi.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: flex-start; /* Zarovnání obsahu k horní části */
+    align-items: flex-start;
     justify-content: center;
     position: relative;
-    padding-top: 10%; /* Přidání prostoru z vrchu */
+    padding-top: 10%;
 }
 
 .hero .overlay {
@@ -91,14 +93,14 @@ header nav .order-button:hover {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; /* Přitáhne ji k dolní části rodiče */
-    background: rgba(0, 0, 0, 0.5); /* Tmavý překrytí */
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding-top: 8%; /* Udržuje prostor pro text */
+    padding-top: 8%;
 }
 
 .hero h1 {
@@ -112,8 +114,8 @@ header nav .order-button:hover {
 }
 
 .btn {
-    background: #007bff;
-    color: white;
+    background: var(--button-color);
+    color: var(--primary-title-color);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -121,10 +123,9 @@ header nav .order-button:hover {
     transition: background 0.3s ease;
 }
 
-/* Sekce "Proč si vybrat" */
 .why-choose {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--primary-title-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -150,7 +151,7 @@ header nav .order-button:hover {
 }
 
 .reason {
-    background-color: #444;
+    background-color: var(--not-important-button-color);
     padding: 30px;
     border-radius: 8px;
     width: 30%;
@@ -166,19 +167,18 @@ header nav .order-button:hover {
 .reason h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: var(--primary-title-color);
 }
 
 .reason p {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: #d4d4d4;
+    color: var(--primary-text-color);
 }
 
-/* Sekce pro značky */
 .brands {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--primary-title-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -204,7 +204,7 @@ header nav .order-button:hover {
 }
 
 .brand {
-    background-color: #444;
+    background-color: var(--not-important-button-color);
     padding: 20px;
     border-radius: 8px;
     width: 30%;
@@ -220,7 +220,6 @@ header nav .order-button:hover {
 .brand p {
     font-size: 1.2rem;
     margin: 0;
-    color: #f4a261;
 }
 
 .brand:hover {
@@ -228,10 +227,9 @@ header nav .order-button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Ceník Sekce */
 .pricing {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--primary-title-color);
     padding: 50px 0;
     text-align: center;
 }
@@ -251,7 +249,6 @@ header nav .order-button:hover {
     padding: 0 20px;
 }
 
-/* Kategorie ceníku */
 .pricing-category {
     margin-bottom: 50px;
 }
@@ -264,7 +261,6 @@ header nav .order-button:hover {
     letter-spacing: 1px;
 }
 
-/* Tabulka ceníku */
 .price-table {
     width: 100%;
     border-collapse: collapse;
@@ -287,23 +283,13 @@ header nav .order-button:hover {
     color: #cccccc;
 }
 
-.price-table tr:nth-child(even) td {
-    background-color: #555;
-}
-
-.price-table tr:hover {
-    background-color: #666;
-    transition: background-color 0.3s;
-}
-
 .price-table td:first-child {
     font-weight: bold;
 }
 
-/* Úprava šířek sloupců v tabulkách ceníku */
 .price-table th.column-1,
 .price-table td.column-1 {
-    width: 15%;  /* 1 část z 3 pro první sloupec */
+    width: 15%;
 }
 
 .price-table th.column-2,
@@ -311,30 +297,29 @@ header nav .order-button:hover {
     width: 1%
 }
 
-/* FAQ Sekce */
 .faq {
-    background-color: #333;
+    background-color: var(--background-color);
     color: #fff;
     padding: 50px 0;
 }
 
 .faq .container {
-    max-width: 1200px; /* Maximální šířka kontejneru */
-    margin: 0 auto;    /* Středování kontejneru */
-    padding: 0 20px;   /* Padding pro vnitřní okraje */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .faq h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--primary-title-color);
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .faq-item {
-    background-color: #444;
+    background-color: var(--not-important-button-color);
     border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
@@ -344,13 +329,13 @@ header nav .order-button:hover {
 .faq-item h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: var(--primary-title-color);
 }
 
 .faq-item p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #d4d4d4;
+    color: var(--primary-text-color);
 }
 
 .faq-item:hover {
@@ -358,22 +343,20 @@ header nav .order-button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Styl pro šipku dolů */
 .scroll-down {
     position: absolute;
-    bottom: 30px; /* Umístí šipku 30px nad spodní částí sekce */
+    bottom: 30px;
     left: 50%;
-    transform: translateX(-50%); /* Centrování šipky horizontálně */
+    transform: translateX(-50%);
     cursor: pointer;
-    animation: bounce 1.5s infinite; /* Animace pro pohyb šipky nahoru a dolů */
+    animation: bounce 1.5s infinite;
 }
 
 .scroll-down img {
-    width: 40px; /* Velikost šipky */
+    width: 40px;
     height: auto;
 }
 
-/* Animace pro šipku (pohyb nahoru a dolů) */
 @keyframes bounce {
     0% {
         transform: translateY(0) translateX(-50%);
@@ -386,3 +369,130 @@ header nav .order-button:hover {
     }
 }
 
+.company {
+    background-color: var(--background-color);
+    color: var(--primary-title-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.company h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.company .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.info-box {
+    background-color: var(--not-important-button-color);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.info-box h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-title-color);
+    text-transform: uppercase;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box ul li {
+    font-size: 1.1rem;
+    color: var(--primary-title-color);
+    margin: 8px 0;
+}
+
+.info-box ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-box ul li a:hover {
+    color: #007bff;
+}
+
+.device-image img {
+    max-width: 35%;
+}
+
+.company-info {
+    background-color: var(--background-color);
+    color: var(--primary-title-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.company-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.company-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.info-box {
+    background-color: var(--not-important-button-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.info-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-title-color);
+}
+
+.info-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+}
+
+.info-box a {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}

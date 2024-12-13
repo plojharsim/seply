@@ -497,95 +497,111 @@ header nav .order-button:hover {
     text-decoration: underline;
 }
 
+/* General Mobile Styles */
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    header {
-        overflow: hidden;
+    /* Make sure all sections do not stretch on mobile */
+    .container {
+        max-width: 1200px; /* Set a max-width to keep content from stretching */
+        margin: 0 auto; /* Center the content */
+        padding: 0 20px; /* Add padding on the sides */
     }
 
+    /* Prevent header from stretching */
     header nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        width: 100%; /* Ensure the header spans full width */
+        padding: 10px; /* Adjust padding */
+        box-sizing: border-box; /* Include padding in width calculation */
     }
 
+    header nav .container {
+        padding: 0; /* Remove extra padding in nav container */
+    }
+
+    /* Adjust logo and navigation in header */
     header nav .logo {
-        font-size: 2rem;
-        margin-left: 0;
-        margin-bottom: 10px;
+        font-size: 2rem; /* Adjust logo size */
+        margin-left: 20px; /* Reduce left margin */
     }
 
     header nav ul {
-        margin-right: 0;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center; /* Center nav items */
+        flex-grow: 1;
+        padding: 0;
+        margin-right: 0; /* Ensure right margin is zero */
     }
 
     header nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 5px; /* Reduce spacing between links */
     }
 
-    header nav ul li a {
-        font-size: 1.2rem;
-        padding: 8px 16px;
-    }
-
+    /* Hide order button on mobile */
     header nav .order-button {
-        display: none;
+        display: none; /* Hide the order button on mobile */
     }
 
+    /* Adjust hero section */
     .hero {
-        height: 50vh;
+        height: 50vh; /* Adjust hero section height */
+        background-size: cover;
+        background-position: center;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Adjust heading size */
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjust paragraph font size */
     }
 
+    /* Reason and Brand sections */
     .reason, .brand {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Stack vertically */
+        margin-bottom: 20px; /* Add space between items */
     }
 
     .pricing-category h3 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjust category heading size */
     }
 
+    /* Table Adjustments */
     .price-table th, .price-table td {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Adjust table font size */
     }
 
     .faq-item {
-        margin: 10px 0;
+        margin: 10px 0; /* Adjust margin for FAQ items */
     }
 
+    /* Adjust scroll-down icon */
     .scroll-down img {
-        width: 30px;
+        width: 30px; /* Adjust scroll-down icon size */
     }
 
+    /* Info Box Adjustments */
     .info-box {
-        width: 100%;
-        margin-bottom: 15px;
+        width: 100%; /* Make info boxes take full width */
+        margin-bottom: 15px; /* Reduce margin */
     }
 
     .device-image img {
-        max-width: 80%;
+        max-width: 80%; /* Adjust device image size */
     }
 
+    /* Ensure container in company info is also constrained */
     .company-info .container {
-        padding: 0 10px;
+        padding: 0 10px; /* Reduce container padding */
     }
 
     .company-info h2 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust company info heading size */
     }
 }

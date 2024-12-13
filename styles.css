@@ -80,7 +80,7 @@ header nav .order-button:hover {
 
 .hero {
     height: 70vh;
-    background: url('pozadi.jpg') no-repeat center center/cover;
+    background: url('images/background.jpg') no-repeat center center/cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;

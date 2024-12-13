@@ -498,7 +498,7 @@ header nav .order-button:hover {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
@@ -512,19 +512,25 @@ header nav .order-button:hover {
         flex-direction: column; /* Stack the navigation links and logo vertically */
         align-items: center; /* Center-align the elements */
         padding: 10px; /* Adjust padding to reduce header height */
+        display: flex;
+        align-items: center;
     }
 
     header nav .logo {
         font-size: 2rem; /* Adjust logo size */
-        margin-left: 0; /* Remove left margin */
-        margin-bottom: 10px; /* Add margin to space out from menu */
+        margin-right: 150px; /* Space between logo and menu toggle */
+        margin-left: 20px;
     }
 
     header nav ul {
-        margin-right: 0; /* Remove right margin */
-        display: flex;
-        flex-direction: column; /* Stack the list items vertically */
-        align-items: center; /* Center-align the list items */
+        display: none; /* Hide navigation links by default */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-dark-color);
+        padding: 20px 0;
+        text-align: center;
     }
 
     header nav ul li {
@@ -540,6 +546,15 @@ header nav .order-button:hover {
     /* Hide order button on mobile */
     header nav .order-button {
         display: none; /* Hide the order button on mobile */
+    }
+
+    .menu-toggle {
+        color: var(--white-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1100; /* Ensure it is above the overlay */
     }
 
     .hero {
@@ -590,5 +605,11 @@ header nav .order-button:hover {
 
     .company-info h2 {
         font-size: 2rem; /* Adjust company info heading size */
+    }
+}
+
+@media (min-width: 821px) {
+    header nav .menu-toggle {
+        display: none;
     }
 }

@@ -114,9 +114,12 @@ header nav .order-button:hover {
 }
 
 .btn {
+    display: block;
+    width: 180px;  /* Nastaví šířku tlačítka */
+    margin: 0 auto;
     background: var(--blue-color);
     color: var(--white-color);
-    padding: 10px 20px;
+    padding: 7px 10px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -523,24 +526,23 @@ header nav .order-button:hover {
     }
 
     header nav ul {
-        display: none; /* Hide navigation links by default */
-        position: absolute;
-        top: 60px; /* Position below the header */
-        left: 0;
-        width: 100%;
-        background-color: var(--bg-dark-color);
-        padding: 20px 0;
-        text-align: center;
+        display: none;
     }
 
     header nav ul li {
-        margin-right: 0; /* Remove right margin for list items */
-        margin-bottom: 10px; /* Add space between list items */
+        margin: 10px 0;  /* Mezery mezi položkami */
+    }
+    
+    header nav ul li a {
+        font-size: 18px;  /* Velikost písma */
+        margin-left: 20px;
     }
 
-    header nav ul li a {
-        font-size: 1.2rem; /* Adjust link size */
-        padding: 8px 16px;
+    header nav ul.show {
+        display: flex; /* Menu je nyní zobrazeno */
+        justify-content: center; /* Zarovná položky na střed */
+        flex-direction: column; /* Všechny položky budou pod sebou */
+        margin-left: 190px;
     }
 
     /* Hide order button on mobile */
@@ -554,11 +556,11 @@ header nav .order-button:hover {
         border-radius: 5px;
         font-size: 1.5rem;
         cursor: pointer;
-        z-index: 1100; /* Ensure it is above the overlay */
+        z-index: 1100; /* Aby bylo tlačítko nad menu */
     }
 
     .hero {
-        height: 50vh; /* Adjust hero section height */
+        height: 85vh; /* Adjust hero section height */
     }
 
     .hero h1 {
@@ -591,7 +593,7 @@ header nav .order-button:hover {
     }
 
     .info-box {
-        width: 100%; /* Make info boxes take full width */
+        width: 88%; /* Make info boxes take full width */
         margin-bottom: 15px; /* Reduce margin */
     }
 
@@ -609,7 +611,7 @@ header nav .order-button:hover {
 }
 
 @media (min-width: 821px) {
-    header nav .menu-toggle {
+    .menu-toggle {
         display: none;
     }
 }

@@ -1,1 +1,4 @@
-console.log('Vítej na webu seply.cz!');
+function toggleMenu() {
+    const menu = document.getElementById('nav-list');
+    menu.classList.toggle('show'); // Přepne třídu "show", čímž se menu zobrazí/skryje
+}

@@ -1,1 +1,1 @@
-console.log('Hello GitHub Pages!');
+console.log('Vítej na webu seply.cz!');

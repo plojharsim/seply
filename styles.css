@@ -497,49 +497,44 @@ header nav .order-button:hover {
     text-decoration: underline;
 }
 
-/* General Mobile Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
     body {
         font-size: 14px; /* Adjust font size for smaller screens */
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
     }
 
-    /* Make sure all sections do not stretch on mobile */
-    .container {
-        max-width: 1200px; /* Set a max-width to keep content from stretching */
-        margin: 0 auto; /* Center the content */
-        padding: 0 20px; /* Add padding on the sides */
+    /* Prevent header expansion */
+    header {
+        overflow: hidden; /* Prevent content from overflowing */
     }
 
-    /* Prevent header from stretching */
     header nav {
-        width: 100%; /* Ensure the header spans full width */
-        padding: 10px; /* Adjust padding */
-        box-sizing: border-box; /* Include padding in width calculation */
+        flex-direction: column; /* Stack the navigation links and logo vertically */
+        align-items: center; /* Center-align the elements */
+        padding: 10px; /* Adjust padding to reduce header height */
     }
 
-    header nav .container {
-        padding: 0; /* Remove extra padding in nav container */
-    }
-
-    /* Adjust logo and navigation in header */
     header nav .logo {
         font-size: 2rem; /* Adjust logo size */
-        margin-left: 20px; /* Reduce left margin */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add margin to space out from menu */
     }
 
     header nav ul {
+        margin-right: 0; /* Remove right margin */
         display: flex;
-        justify-content: center; /* Center nav items */
-        flex-grow: 1;
-        padding: 0;
-        margin-right: 0; /* Ensure right margin is zero */
+        flex-direction: column; /* Stack the list items vertically */
+        align-items: center; /* Center-align the list items */
     }
 
     header nav ul li {
-        margin-right: 5px; /* Reduce spacing between links */
+        margin-right: 0; /* Remove right margin for list items */
+        margin-bottom: 10px; /* Add space between list items */
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem; /* Adjust link size */
+        padding: 8px 16px;
     }
 
     /* Hide order button on mobile */
@@ -547,11 +542,8 @@ header nav .order-button:hover {
         display: none; /* Hide the order button on mobile */
     }
 
-    /* Adjust hero section */
     .hero {
         height: 50vh; /* Adjust hero section height */
-        background-size: cover;
-        background-position: center;
     }
 
     .hero h1 {
@@ -562,9 +554,8 @@ header nav .order-button:hover {
         font-size: 1.2rem; /* Adjust paragraph font size */
     }
 
-    /* Reason and Brand sections */
     .reason, .brand {
-        width: 100%; /* Stack vertically */
+        width: 100%; /* Stack reasons and brands vertically */
         margin-bottom: 20px; /* Add space between items */
     }
 
@@ -572,7 +563,6 @@ header nav .order-button:hover {
         font-size: 1.5rem; /* Adjust category heading size */
     }
 
-    /* Table Adjustments */
     .price-table th, .price-table td {
         font-size: 0.9rem; /* Adjust table font size */
     }
@@ -581,12 +571,10 @@ header nav .order-button:hover {
         margin: 10px 0; /* Adjust margin for FAQ items */
     }
 
-    /* Adjust scroll-down icon */
     .scroll-down img {
         width: 30px; /* Adjust scroll-down icon size */
     }
 
-    /* Info Box Adjustments */
     .info-box {
         width: 100%; /* Make info boxes take full width */
         margin-bottom: 15px; /* Reduce margin */
@@ -596,7 +584,6 @@ header nav .order-button:hover {
         max-width: 80%; /* Adjust device image size */
     }
 
-    /* Ensure container in company info is also constrained */
     .company-info .container {
         padding: 0 10px; /* Reduce container padding */
     }

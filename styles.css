@@ -115,7 +115,7 @@ header nav .order-button:hover {
 
 .btn {
     display: block;
-    width: 180px;  /* Nastaví šířku tlačítka */
+    width: 180px;
     margin: 0 auto;
     background: var(--blue-color);
     color: var(--white-color);
@@ -503,25 +503,24 @@ header nav .order-button:hover {
 /* Mobile Styles */
 @media (max-width: 820px) {
     body {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
     }
 
-    /* Prevent header expansion */
     header {
-        overflow: hidden; /* Prevent content from overflowing */
+        overflow: hidden;
     }
 
     header nav {
-        flex-direction: column; /* Stack the navigation links and logo vertically */
-        align-items: center; /* Center-align the elements */
-        padding: 10px; /* Adjust padding to reduce header height */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
         display: flex;
         align-items: center;
     }
 
     header nav .logo {
-        font-size: 2rem; /* Adjust logo size */
-        margin-right: 150px; /* Space between logo and menu toggle */
+        font-size: 2rem;
+        margin-right: 150px;
         margin-left: 20px;
     }
 
@@ -530,24 +529,23 @@ header nav .order-button:hover {
     }
 
     header nav ul li {
-        margin: 10px 0;  /* Mezery mezi položkami */
+        margin: 10px 0;
     }
     
     header nav ul li a {
-        font-size: 18px;  /* Velikost písma */
+        font-size: 18px;
         margin-left: 20px;
     }
 
     header nav ul.show {
-        display: flex; /* Menu je nyní zobrazeno */
-        justify-content: center; /* Zarovná položky na střed */
-        flex-direction: column; /* Všechny položky budou pod sebou */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin-left: 190px;
     }
 
-    /* Hide order button on mobile */
     header nav .order-button {
-        display: none; /* Hide the order button on mobile */
+        display: none;
     }
 
     .menu-toggle {
@@ -556,57 +554,57 @@ header nav .order-button:hover {
         border-radius: 5px;
         font-size: 1.5rem;
         cursor: pointer;
-        z-index: 1100; /* Aby bylo tlačítko nad menu */
+        z-index: 1100;
     }
 
     .hero {
-        height: 85vh; /* Adjust hero section height */
+        height: 85vh;
     }
 
     .hero h1 {
-        font-size: 2.5rem; /* Adjust heading size */
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1.2rem; /* Adjust paragraph font size */
+        font-size: 1.2rem;
     }
 
     .reason, .brand {
-        width: 100%; /* Stack reasons and brands vertically */
-        margin-bottom: 20px; /* Add space between items */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .pricing-category h3 {
-        font-size: 1.5rem; /* Adjust category heading size */
+        font-size: 1.5rem;
     }
 
     .price-table th, .price-table td {
-        font-size: 0.9rem; /* Adjust table font size */
+        font-size: 0.9rem;
     }
 
     .faq-item {
-        margin: 10px 0; /* Adjust margin for FAQ items */
+        margin: 10px 0;
     }
 
     .scroll-down img {
-        width: 30px; /* Adjust scroll-down icon size */
+        width: 30px;
     }
 
     .info-box {
-        width: 88%; /* Make info boxes take full width */
-        margin-bottom: 15px; /* Reduce margin */
+        width: 88%;
+        margin-bottom: 15px;
     }
 
     .device-image img {
-        max-width: 80%; /* Adjust device image size */
+        max-width: 80%;
     }
 
     .company-info .container {
-        padding: 0 10px; /* Reduce container padding */
+        padding: 0 10px;
     }
 
     .company-info h2 {
-        font-size: 2rem; /* Adjust company info heading size */
+        font-size: 2rem;
     }
 }
 

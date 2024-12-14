@@ -2,23 +2,19 @@ function toggleMenu() {
     const menu = document.getElementById('nav-list');
     menu.classList.toggle('show');
 }
-
 document.getElementById("reservationForm").addEventListener("submit", function(e) {
     e.preventDefault();
-
     if (this.brand.value === "Značka nebyla vybrána") {
         document.getElementById("responseMessage").textContent = "Vyberte značku kotle!";
         document.getElementById("responseMessage").style.color = "red";
-        return false;  // Zabrání odeslání formuláře
+        return false;
     }
-
     const fullname = document.getElementById("fullname").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const brand = document.getElementById("brand").value;
     const time = document.getElementById("time").value;
     const message = document.getElementById("message").value;
-
     const formData = {
         fullname: fullname,
         email: email,
@@ -27,9 +23,7 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
         time: time,
         message: message
     };
-
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxVopxS5hQpjtoHvubiKmzEwRQ5zOGHRLPQRREghyIYhpg1sN5AW6YDXGoJTA1ekM_O/exec';  // Nahraďte vaší vlastní URL
-
     fetch(scriptURL, {
         method: 'POST',
         body: new URLSearchParams(formData),

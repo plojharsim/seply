@@ -676,3 +676,15 @@ form button:hover {
     font-size: 1rem;
     color: var(--light-gray-color);
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}

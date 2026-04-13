@@ -19,7 +19,7 @@ document.getElementById("reservationForm").addEventListener("submit", function(e
         time: time,
         message: message
     };
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVopxS5hQpjtoHvubiKmzEwRQ5zOGHRLPQRREghyIYhpg1sN5AW6YDXGoJTA1ekM_O/exec';  // Nahraďte vaší vlastní URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxAKuy08MtiAhxBerNKqpZCzXocjq-dV9RJ_2wgX05iGdcr6saAnVz_fu_d2l0qC7XqtQ/exec';
     fetch(scriptURL, {
         method: 'POST',
         body: new URLSearchParams(formData),

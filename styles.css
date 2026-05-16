@@ -151,7 +151,7 @@ header nav .order-button:hover {
     text-align: center;
 }
 
-.why-choose h2 {
+.why-choose h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -204,7 +204,7 @@ header nav .order-button:hover {
     text-align: center;
 }
 
-.brands h2 {
+.brands h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -255,7 +255,7 @@ header nav .order-button:hover {
     text-align: center;
 }
 
-.pricing h2 {
+.pricing h1 {
     font-size: 3rem;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -397,7 +397,7 @@ header nav .order-button:hover {
     text-align: center;
 }
 
-.company h2 {
+.company h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -469,7 +469,7 @@ header nav .order-button:hover {
     text-align: center;
 }
 
-.company-info h2 {
+.company-info h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -634,7 +634,7 @@ header nav .order-button:hover {
         padding: 0 10px;
     }
 
-    .company-info h2 {
+    .company-info h1 {
         font-size: 2rem;
     }
 }
@@ -816,7 +816,7 @@ footer a {
     text-align: left;
 }
 
-.gdpr h2 {
+.gdpr h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-transform: uppercase;
